@@ -1,0 +1,601 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static "css/estilo.css" %}" /> <!--CSS PRINCIPAL-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/animate.css"> <!--CSS AUXILIAR DO CARROSSEL-->
+	<title>Mandacaru Aerodesign</title>
+</head>
+
+
+<body>
+
+
+	<!--BARRA DE NAVEGAÇÃO-->
+	<div class="navbar">
+		<div id="black-overlay"></div>
+
+		<div class="logoImg">
+			<img src="{% static "css/img/logo1.png" %}" width="83" height="83">
+		</div>
+
+		<nav>
+			<ul>
+				<li class="notshowonmobile"><a href="index.html" style="margin-right: 50px">INÍCIO</a></li>
+
+				<li class="notshowonmobile"><a class="scroll" href="#target-1" style="margin-right: 50px">SOBRE</a></li>
+				
+				<li class="notshowonmobile"><a class="scroll" href="#target-2" style="margin-right: 50px">EQUIPE</a></li>
+				
+				<li class="notshowonmobile"><a class="scroll" href="#target-3" style="margin-right: 50px">GALERIA</a></li>
+				
+				<li class="notshowonmobile" style="margin-right: 20px;"><a class="scroll" href="#target-4">PATROCINADORES</a></li>
+
+				<li class="showonmobile" style="margin-right: 20px;"><a href="javascript:void(0);" id="menumobile"><i class="material-icons">menu</i></a></li>
+			</ul>
+		</nav>
+	</div>
+
+
+
+	<div class="bannerImg parallax"></div> 	<!--Banner do site-->
+
+
+
+	<!--QUEM SOMOS-->
+	<div class="conteudo" id="target-1">
+		<h3>QUEM SOMOS</h3>
+		<p>Desde a criação em 2000, a equipe se oficializou como projeto de extensão do CTG com o objetivo de participar da competição estudantil SAE Brasil Aerodesign, que tem como principal meta o desenvolvimento de uma aeronave rádio controlada. Embora tenhamos um grande enfoque em engenharia, atualmente estudantes de toda a UFPE podem ingressar no grupo, fazendo com que a multidisciplinaridade do projeto seja constantemente incentivada e trabalhada. </p>
+		<p>A necessidade de superação constante é nossa principal motivação. Para mantermos nossa equipe em crescimento, é importante sempre propor soluções eficientes, otimizadas e criativas para desenvolver uma aeronave que cumpra os requisitos exigidos anualmente pela competição.</p>
+		<div style="padding-top: 25px">
+			<button class="button"><a href="#" target="_blank">PROCESSO SELETIVO ABERTO</a></button>
+		</div>
+		
+	</div>
+
+
+
+	<div id="fundoImg1" class="parallax"></div> <!--Imagem de fundo nº2-->
+
+
+
+    <!--A COMPETIÇÃO-->
+	<div class="conteudo-2">
+		<h3>A COMPETIÇÃO</h3>
+		<div class="row">
+			<div class="center">
+				<div class="column-23">
+					<p>A SAE Brasil Aerodesign é uma competição anual promovida pela SAE na qual participam
+					estudantes universitários de engenharia. O desafio proposto é projetar, desenvolver e construir um
+					avião cargueiro de pequeno porte rádio controlado otimizando as estruturas e reduzindo o peso. Os
+					universitários também desenvolvem conhecimentos e aptidões profissionais como senso de
+					responsabilidade, disciplina e capacidade de trabalho em equipe.</p>
+					<p>Os projetos das equipes se organizam em três categorias: Micro, Regular e Avançada. As classes
+					requisitam aptidões e níveis de exigência diferentes aos estudantes.</p>
+					<p>A competição acontece todos os anos na sede do Instituto Tecnológico de Aeronáutica (ITA) ao
+					final do mês de outubro. Atualmente, a competição envolve cerca de 1400 alunos distribuídos em 95
+					equipes de Aerodesign de todas as regiões do Brasil e outras de outros países da América Latina e
+					Europa que participam atraídas pelo destaque tomado pela competição a nível internacional.</p>
+				</div>
+			</div>
+			<div class="column-13">
+				<img src="{% static "css/img/logo-sae.png" %}" width="170">
+			</div>	
+		</div>	
+	</div>
+
+
+
+	<div id="fundoImg2" class="parallax"></div> <!--Imagem de fundo nº3-->
+
+
+
+	<!--HITÓRIA-->
+	<!--Cada marco está como uma "li", as labels são as legendas-->
+	<div class="conteudo-3">
+		<h3>HISTÓRIA</h3>
+		<ul id=timeline>
+			<li class="ponto">
+				<span class="date">2001</span>
+				<label class="marco" id="primeiralabel">
+					<span>
+						A primeira aparição da UFPE em uma competição de AeroDesign da SAE-BRASIL aconteceu em novembro de 2001, com a equipe AeroBeat formada por sete alunos da UFPE e um aluno da Universidade de Tecnologia de Compiegne-França.
+					</span>
+				    <img src="{% static "css/img/2001.jpg" %}">
+				</label>
+				<span class="circulo" id="circulo1"></span>
+			</li>
+		    <li class="ponto">
+		    	<span class="date">2006</span>
+		    	<label class="marco" id="segundalabel">
+					<span>
+						Em 2006, aconteceu a VIII Competição SAE Brasil Aerodesign e pela 6º vez os alunos da UFPE participaram. Neste ano a Equipe contou com 10 integrantes de engenharia que construíram um aeromodelo com asa alta, cauda em T e trem de pouso triciclo.
+					</span>
+					<img src="{% static "css/img/2006.jpg" %}">
+				</label>
+				<span class="circulo" id="circulo2"></span>
+		    </li>
+			<li class="ponto">
+				<span class="date">2008</span>
+				<label class="marco" id="terceiralabel">
+					<span>
+						Em 2008, a então Equipe Nova Mandacaru participou pela 7º vez da Competição SAE Brasil Aerodesign, na sua X Edição. A Equipe contou com a participação de 11 alunos da Universidade e que projetaram uma aeronave de configuração tractor com trem de pouso do tipo triciclo e asa na forma trapezoidal.
+					</span>
+					<img src="{% static "css/img/2008.jpg" %}">
+				</label>
+				<span class="circulo" id="circulo3"></span>
+			</li>
+			<li class="ponto">
+				<span class="date">2012</span>
+				<label class="marco" id="quartalabel">
+					<span>
+						Em 2012, a Equipe participou novamente da Competição SAE Brasil AeroDesign, esta na sua XIV Edição. Nesse ano, a Equipe recebeu Menção Honrosa no quesito Menor Tempo de Retirada de Carga - Classe Regular com 4,09s.
+					</span>
+					<img src="{% static "css/img/2012.jpg" %}">
+				</label>
+				<span class="circulo" id="circulo4"></span>
+			</li>
+			<li class="ponto">
+				<span class="date">2017</span>
+				<label class="marco" id="videopromocional">
+					<span>
+						ajndjkasndkjasndkjansnd
+					</span>
+				</label>
+				<span class="circulo" id="circulo5"></span>
+			</li>
+		</ul>
+	</div>
+
+
+	<div id="fundoImg3" class="parallax"></div> <!--Imagem de fundo nº3-->
+	
+
+
+	<!--ÁREAS-->
+	<div class="conteudo-4">
+		<h3>ÁREAS</h3>
+		<span class="linha" id="linha1">
+			<span class="icone" id="icone1">
+				<img src="{% static "css/img/dinamic.png" %}">
+				<h2><b>AERODINÂMICA</b></h2>
+				<p>Responsável pela determinação dos parâmetros geométricos da asa e das empenagens, bem como a determinação dos perfis aerodinâmicos a serem usados. Para tanto, os requisitos de projeto devem ser cumpridos afim de buscar uma aeronave o mais otimizada possível e aerodinamicamente eficiente.</p>
+			</span>
+			<span class="icone" id="icone2">
+				<img src="{% static "css/img/balance.png" %}">
+				<h2><b>CARGAS E AEROELASTICIDADE</b></h2>
+				<p>Responsável pelos cálculos das cargas atuantes no avião, em determinadas situações de voo e em solo. Atua conjuntamente com a área de estruturas, com o intuito de validar dinamicamente as estruturas do avião. A área de Aeroelasticidade consiste nas análises e cálculos da aeronave, como análises realizadas na grandes empresas de aviação, com o intuito de prevenir os efeitos Aeroelásticos.</p>
+			</span>
+			<span class="icone" id="icone3">
+				<img src="{% static "css/img/performance.png" %}">
+				<h2><b>DESEMPENHO</b></h2>
+				<p>Responsável pela escolha do grupo moto propulsor, e de estudar os limites de movimento da aeronave com base nas forças que atuam na mesma. Por exemplo: calcula-se o quanto de pista é necessária para o avião decolar; a velocidade máxima, entre outros.</p>
+			</span>
+			<span class="icone" id="icone4">
+				<img src="{% static "css/img/stab.png" %}">
+				<h2><b>ESTABILIDADE</b></h2>
+				<p>Área destinada ao estudo da controlabilidade da aeronave como um todo, levando em considerações diversos parâmetros, tanto geométricos quanto aerodinâmicos e aeroelásticos. Também analisa a tendência da estabilidade da aeronave quando sujeita a perturbações externas ou eventos</p>
+			</span>
+	    </span>
+	    <span class="linha" id="linha2">
+	    	<span class="icone" id="icone5">
+	    		<img src="{% static "css/img/tape.png" %}">
+	    		<h2><b>ESTRUTURAS E ENSAIOS</b></h2>
+	    		<p>Realiza o dimensionamento dos componentes estruturais da aeronave e o cumprimento dos requisitos e solicitações impostas em voo e em solo por meio de cálculos analíticos, análises em Elementos Finitos e ensaios nasestruturas.</p>
+	    	</span>
+	    	<span class="icone" id="icone6">
+	    		<img src="{% static "css/img/squad.png" %}">
+	    		<h2><b>PROJETO MECÂNICO</b></h2>
+	    		<p>Responsável pela determinação dos parâmetros geométricos da asa e das empenagens, bem como a determinação dos perfis aerodinâmicos a serem usados. Para tanto, os requisitos de projeto devem ser cumpridos afim de buscar uma aeronave o mais otimizada possível e aerodinamicamente eficiente.</p>
+	    	</span>
+	    	<span class="icone" id="icone7">
+	    		<img src="{% static "css/img/admin.png" %}">
+	    		<h2><b>GESTÃO DE EQUIPE E RH</b></h2>
+	    		<p>Área responsável por gerir as responsabilidades administrativas da equipe, mantendo constante diálogo com os integrantes e garantindo um ambiente de trabalho responsável, eficiente, limpo e harmonioso.</p>
+	    	</span>
+	    	<span class="icone" id="icone8">
+	    		<img src="{% static "css/img/money.png" %}">
+	    		<h2><b>GESTÃO FINANCEIRA</b></h2>
+	    		<p>Área responsável pelo gerenciamento dos recursos financeiros da equipe, garantindo sua distribuição inteligente e um controle de gastos responsável e organizado. Além disso, a gestão financeira também impulsiona a equipe a explorar a realização de eventos para arrecadação de recursos quando necessário.</p>
+	    	</span>
+	    </span>
+	    <span class="linha" id="linha3">
+	    	<span class="icone" id="icone9">
+	    		<img src="{% static "css/img/ray.png" %}">
+	    		<h2><b>AVIÔNICA</b></h2>
+	    		<p>Dimensiona todo o sistema elétrico da aeronave e garante sua eficiência e segurança. Também é responsável pelos sistemas de aquisição de dados e telemetria da equipe, imprescindíveis para comprovar os resultados teóricos.</p>
+	    	</span>
+	    	<span class="icone" id="icone10">
+	    		<img src="{% static "css/img/tool.png" %}">
+	    		<h2><b>PLANEJAMENTO DE PROCESSO E MANUFATURA</b></h2>
+	    		<p>Responsável por definir como será construída a aeronave, envolvendo atividades que vão desde a definição dos procedimentos construtivos até a especificação das ferramentas e demais recursos necessários para sua produção.</p>
+	    	</span>
+	    	<span class="icone" id="icone11">
+	    		<img src="{% static "css/img/marketing.png" %}">
+	    		<h2><b>RELAÇÕES EXTERNAS E MÍDIA</b></h2>
+	    		<p>Responsável pela difusão da imagem da equipe perante o público externo e interno, fazendo a ponte de comunicação com os integrantes, patrocinadores e professores.</p>
+	    	</span>
+	    </span>
+	</div>
+
+
+
+	<div id="fundoImg4" class="parallax"></div> <!--Imagem de fundo nº4-->
+	
+
+
+	<!--EQUIPE-->
+	<div class="conteudo-5" id="target-2">
+		<h3>EQUIPE</h3>
+		<!--Classe Owl-theme e Owl-carousel são as principais-->
+		<!--As configurações delas (para o estilo) estão no estilo.css-->
+		<!--As configurações do plugin (quantidade de icones por tela...etc) estão no owl.carousel.mim.js-->
+		<!--O script cria uma classe chamada owl-iten pra cada div dentro da div principal-->
+		<!--Você pode configurar essa classe também no estilo.css-->
+		<div id = "carousel1" class="owl-theme owl-carousel">
+            <div>
+            	<img src="{% static "css/img/membros/BrendaConrado.jpg" %}">
+            	<div class=legendaequipe>
+            		<span>Brenda Conrado<br></span>
+            		<span class="função">Chefe de Estruturas</span>
+            	</div>
+            </div>
+            <div>
+            	<img src="{% static "css/img/membros/BrenoSouza.jpg" %}">
+            	<div class=legendaequipe>
+            		<span>Breno Souza<br></span>
+            		<span class="função">Capitão</span>
+            	</div>
+            </div>
+            <div>
+            	<img src="{% static "css/img/membros/DanielAlencar.jpg" %}">
+            	<div class=legendaequipe>
+            		<span>Daniel Alencar<br></span>
+            		<span class="função">Asp. de Finanças</span>
+            	</div>
+            </div>
+            <div>
+            	<img src="{% static "css/img/membros/EmmanuelEsperança.jpg" %}">
+            	<div class=legendaequipe>
+            		<span>Emmanuel Esperança<br></span>
+            		<span class="função">Asp. de Proj. Mecânico</span>
+            	</div>
+            </div>
+            <div>
+            	<img src="{% static "css/img/membros/EnosHenrique.jpeg" %}">
+            	<div class=legendaequipe>
+            		<span>Enos Henrique<br></span>
+            		<span class="função">Piloto</span>
+            	</div>
+            </div>
+            <div>
+            	<img src="{% static "css/img/membros/FelipeLins.jpg" %}">
+            	<div class=legendaequipe>
+            		<span>Felipe Lins<br></span>
+            		<span class="função">Vice-Capitão</span>
+            	</div>
+            </div>
+            <div>
+            	<img src="{% static "css/img/membros/GabrielJesus.jpg" %}">
+            	<div class=legendaequipe>
+            		<span>Gabriel Jesus<br></span>
+            		<span class="função">Asp. de Aerodinânica</span>
+            	</div>
+            </div>
+            <div>
+            	<img src="{% static "css/img/membros/LeonardoFerreira.jpg" %}">
+            	<div class=legendaequipe>
+            		<span>Leonardo Ferreira<br></span>
+            		<span class="função">Chefe de Desempenho</span>
+            	</div>
+            </div>
+            <div>
+            	<img src="{% static "css/img/membros/MariaEduarda.jpg" %}">
+            	<div class=legendaequipe>
+            		<span>Maria Eduarda<br></span>
+            		<span class="função">Asp. de Aerodinâmica</span>
+            	</div>
+            </div>
+            <div>
+            	<img src="{% static "css/img/membros/MarynaDiógenes.jpg" %}">
+            	<div class=legendaequipe>
+            		<span>Maryna Diógenes<br></span>
+            		<span class="função">Chefe de Construção</span>
+            	</div>
+            </div>
+            <div>
+            	<img src="{% static "css/img/membros/MickelineAlves.jpg" %}">
+            	<div class=legendaequipe>
+            		<span>Mickeline Alves<br></span>
+            		<span class="função">Asp. de Cargas<span>
+            	</div>
+            </div>
+            <div>
+            	<img src="{% static "css/img/membros/PedroHenrique.jpg" %}">
+            	<div class=legendaequipe>
+            		<span>Pedro Henrique<br></span>
+            		<span class="função">Chefe de Eletrônica</span>
+            	</div>
+            </div>
+            <div>
+            	<img src="{% static "css/img/membros/RenataTavares.jpg" %}">
+            	<div class=legendaequipe>
+            		<span>Renata Tavares<br></span>
+            		<span class="função">Chefe de Aerodinâmica</span>
+            	</div>
+            </div>
+            <div>
+            	<img src="{% static "css/img/membros/VictorOliveira.jpg" %}"
+            	<div class=legendaequipe>
+            		<span>Victor Oliveira<br></span>
+            		<span class="função">Asp. de Estab. e Controle</span>
+            	</div>
+            </div>
+            <div>
+            	<img src="{% static "css/img/membros/VitorMourato.jpg" %}">
+            	<div class=legendaequipe>
+            		<span>Vitor Mourato<br></span>
+            		<span class="função">Asp. de Eletrônica</span>
+            	</div>
+            </div>
+            <div>
+            	<img src="{% static "css/img/membros/WandersonBezerra.jpg" %}">
+            	<div class=legendaequipe>
+            		<span>Wanderson Bezerra<br></span>
+            		<span class="função">Chefe de Proj. Mecânico</span>
+            	</div>
+            </div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<!--GALERIA-->
+	<!--Classes clearfix e mosaicflow são as principais-->
+	<!--Classe mosaicflow__item representa cada imagem-->
+	
+	<div class="galeria" id="target-3">
+		<div class="clearfix mosaicflow">
+			
+			<div class="mosaicflow__item">
+				<img src="{% static "css/img/galeria/02.JPG" %}" alt="">
+			</div>
+			
+			<div class="mosaicflow__item">
+				<img src="{% static "css/img/galeria/04.JPG" %}" alt="">
+			</div>
+			<div class="mosaicflow__item">
+				<img src="{% static "css/img/galeria/05.JPG" %}" alt="">
+			</div>
+			<div class="mosaicflow__item">
+				<img src="{% static "css/img/galeria/06.JPG" %}" alt="">
+			</div>
+			<div class="mosaicflow__item">
+				<img src="{% static "css/img/galeria/07.JPG" %}" alt="">
+			</div>
+			<div class="mosaicflow__item">
+				<img src="{% static "css/img/galeria/08.JPG" %}" alt="">
+			</div>
+			<div class="mosaicflow__item">
+				<img src="{% static "css/img/galeria/11.JPG" %}" alt="">
+			</div>
+			<div class="mosaicflow__item">
+				<img src="{% static "css/img/galeria/12.JPG" %}" alt="">
+			</div>
+			<div class="mosaicflow__item">
+				<img src="{% static "css/img/galeria/13.JPG" %}" alt="">
+			</div>
+			<div class="mosaicflow__item">
+				<img src="{% static "css/img/galeria/01.JPG" %}" alt="">
+			</div>
+			<div class="mosaicflow__item">
+				<img src="{% static "css/img/galeria/14.JPG" %}" alt="">
+			</div>
+			<div class="mosaicflow__item">
+				<img src="{% static "css/img/galeria/10.JPG" %}" alt="">
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+
+
+	<!--PATROCINADORES-->
+	<div class=conteudo-6 id="target-4">
+		<h3>PATROCINADORES</h3>
+		<div id = "carousel2" class="owl-theme owl-carousel">
+            <div class="patr">
+            	<img src="{% static "css/img/logos/Alltec.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/Altair.png" %}">
+         	</div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/ANSYS.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/APC.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/Atelier.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/Barracuda.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/CIn.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/CITi.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/ColegiodeSaude.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/Concrebuco.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/CreaJr.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/CTG.jpg" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/DAMecanica.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/Edescartaveis.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/ESSS.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/HxH.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/Louco.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/MangueBaja.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/MKFuel.jpg" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/ModFrontier.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/Next.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/PortoDigital.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/SAE.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/Solidworks.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/Starret.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/TAMBORIL.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/TKB.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/UFPE.png" %}">
+            </div>
+            <div class="patr">
+            	<img src="{% static "css/img/logos/Voxar.png" %}">
+            </div>
+		</div>
+		<button class="button"><a href="#" target="_blank">TORNE-SE UM PATROCINADOR!</a></button>
+	</div>
+
+	<!-- CONTATO E MAPA-->
+	<div class="contato-mapa">
+		<div class="contato-form">
+			<h3>ENTRE EM CONTATO</h3>
+			<form>
+				<input class="adjust" type="text" name="nome" placeholder="Nome e sobrenome *"><br>
+				<input class="adjust" type="email" name="email" placeholder="Email *"><br>
+				<input class="adjust" type="number" name="telefone" placeholder="Telefone *"><br>
+				<!-- <input id="mensagem-input" type="textarea" name="mensagem" placeholder="Digite sua mensagem *"><br> -->
+				<textarea name="mensagem" placeholder="Digite sua mensagem *"></textarea>
+			</form>
+			<button class="button-send">Enviar</button>
+		</div>
+
+		<div class="mapa">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.483903742554!2d-34.94800928545943!3d-8.052020494202209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab195e125f7061%3A0x99f064cb566b39d0!2sAv.+Prof.+Moraes+Rego%2C+1233+-+Cidade+Universit%C3%A1ria%2C+Recife+-+PE%2C+50670-420!5e0!3m2!1spt-BR!2sbr!4v1512951587845" width="80%" height="80%" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<div class="footer">
+			<div class="copyright">Copyright &#169; 2017 CITi</div>
+			<div class="contato">
+				<div id="email">mandacaruaerodesign@gmail.com</div>
+				<div id="endereco">Av. Prof. Moraes Rego, 1233 - Cidade Universitária, UFPE, CTG - Galpão de Engenharia Mecânica, 50670-901 Recife, Brazil</div>
+			</div>
+			<div class="midia">
+				<div id="fb">
+					<a href="index.html"><img src="{% static "icons/fb.png" %}" width="33" height="33"></a>
+				</div>
+
+				<div id="insta">
+					<a href="index.html"><img src="{% static "icons/insta.png" %}" width="33" height="33"></a>
+				</div>
+
+				<div id="linkedin">
+					<a href="index.html"><img src="{% static "icons/linkedin.png" %}" width="33" height="33"></a>
+				</div>
+			</div>
+	</div>
+
+	<!--FOOTER PRA WIDTH < 684-->
+	<div class="footer-resp">
+		<div class="contato">
+			<div id="email">mandacaruaerodesign@gmail.com</div>
+			<div id="endereco">Av. Prof. Moraes Rego, 1233 - Cidade Universitária, UFPE, CTG - Galpão de Engenharia Mecânica, 50670-901 Recife, Brazil</div>
+		</div>
+
+		<div class="linha-footer">
+			<div class="copyright">Copyright &#169; 2017 CITi</div>
+			<div class="midia">
+				<div id="fb">
+					<a href="index.html"><img src="{% static "icons/fb.png" %}" width="33" height="33"></a>
+				</div>
+
+				<div id="insta">
+					<a href="index.html"><img src="{% static "icons/insta.png" %}" width="33" height="33"></a>
+				</div>
+
+				<div id="linkedin">
+					<a href="index.html"><img src="{% static "icons/linkedin.png" %}" width="33" height="33"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- MENU RESPONSIVO -->
+	<div class="menu">
+		<div class="closemenu"><a href="javascript:void(0);" id="closemenubtn"><i class="material-icons">close</i></a></div>
+		<div>
+		<ul>
+			<li class="" style="padding-bottom: 6px;"><a href="index.html" style="margin-right: 50px">INÍCIO</a></li>
+
+			<li class="" style="padding-bottom: 6px;"><a href="index.html" style="margin-right: 50px">SOBRE</a></li>
+				
+			<li class="" style="padding-bottom: 6px;"><a href="index.html" style="margin-right: 50px">EQUIPE</a></li>
+				
+			<li class="" style="padding-bottom: 6px;"><a href="index.html" style="margin-right: 50px">GALERIA</a></li>
+				
+			<li class="" style="margin-right: 20px;"><a href="index.html">PATROCINADORES</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!--SCRIPTS-->
+	<script type="text/javascript" src="{$ static "js/jquery-3.2.1.min.js" %}"></script><!--JQUERY-->
+	<script type="text/javascript" src="{$ static "js/script.js" %}"></script><!--SCRIPT PRINCIPAL-->
+	<script type="text/javascript" src="{$ static "js/owl.carousel.min.js" %}"></script><!--SCRIPT DO CASSOSSEL-->
+    <script type="text/javascript" src="{$ static "js/jquery.mosaicflow.js" %}"></script><!--SCRIPT DO MOSAICO-->
+    
+
+</body>
+</html>
