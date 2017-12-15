@@ -16,7 +16,11 @@ def index(request):
             send_message()
     else: #GET request
         contato = FormContato() #apenas mostra o formulário para ser preenchido
+    
+    infos = infoPS.objects.first()
+
+    context = { 'infos_ativo': infos.ativo }
 
     return render(
-        request, 'index.html',
+        request, 'index.html', context,
     )

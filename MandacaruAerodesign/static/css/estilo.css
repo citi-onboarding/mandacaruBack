@@ -167,6 +167,26 @@ nav ul{
   margin-top: 20px;
 }
 
+.button-closed{
+  background-color: #919191;
+  border: none;
+  color: white;
+  font-family: DidaticGothic;
+  font-weight: bolder;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.button-closed a{
+  cursor: default;
+}
+
 .button-send{
   width: 75px;
   height: 37.5px;
@@ -177,7 +197,7 @@ nav ul{
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  }
+}
 
 #fundoImg1{
   z-index: -1;
@@ -1461,4 +1481,27 @@ textarea{
 .button a:active{
    text-decoration: none;
    color: #393434;
+}
+
+.button a{
+  text-decoration: none;
+  color: #393434;
+}
+
+.button-closed a:link{
+  text-decoration: none;
+  color: #393434;
+}
+
+.button-closed a:visited{
+  color: #393434;
+}
+
+.button-closed a:hover{
+  color: #393434;
+}
+
+.button-closed a:active{
+  text-decoration: none;
+  color: #393434;
 }

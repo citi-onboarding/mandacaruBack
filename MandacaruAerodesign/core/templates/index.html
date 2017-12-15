@@ -52,7 +52,12 @@
 		<p>Desde a criação em 2000, a equipe se oficializou como projeto de extensão do CTG com o objetivo de participar da competição estudantil SAE Brasil Aerodesign, que tem como principal meta o desenvolvimento de uma aeronave rádio controlada. Embora tenhamos um grande enfoque em engenharia, atualmente estudantes de toda a UFPE podem ingressar no grupo, fazendo com que a multidisciplinaridade do projeto seja constantemente incentivada e trabalhada. </p>
 		<p>A necessidade de superação constante é nossa principal motivação. Para mantermos nossa equipe em crescimento, é importante sempre propor soluções eficientes, otimizadas e criativas para desenvolver uma aeronave que cumpra os requisitos exigidos anualmente pela competição.</p>
 		<div style="padding-top: 25px">
-			<button class="button"><a href="#" target="_blank">PROCESSO SELETIVO ABERTO</a></button>
+			{% if infos_ativo %}
+				<button class="button"><a href="#" target="_blank">PROCESSO SELETIVO ABERTO</a></button>
+			{% else %}
+				<button class="button-closed"><a href="#" target="_blank">PROCESSO SELETIVO FECHADO</a></button>
+			{% endif %}
+			
 		</div>
 		
 	</div>
