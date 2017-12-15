@@ -49,9 +49,10 @@ body{
 .navbar{
   position: fixed;
   width: 100%;
-  height: 15%;
-  display: inline-flex;
+  height: auto;
+  display: flex;
   z-index: 2;
+
 }
 
 .navbar nav{
@@ -98,7 +99,7 @@ nav ul{
 }
 
 #black-overlay{
-   background-color: #f7f5f5e0;
+   background-color: #e8e8e8;
    opacity: 0.0;
    position: absolute;
    top: 0;
@@ -108,9 +109,11 @@ nav ul{
 
 .logoImg{
    width: 11%;
+   height: 11%;
    justify-content: flex-start;
    margin-left: 20px;
    z-index: 100;
+   align-items: flex-start;
 }
 
 .bannerImg{
@@ -129,7 +132,7 @@ nav ul{
    width: 100%;
    text-align: center;
    background: #F9F9F9;
-   padding-top: 25px;
+   padding-top: 40px;
    padding-bottom: 25px;
 }
 
@@ -161,6 +164,7 @@ nav ul{
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 12px;
+  margin-top: 20px;
 }
 
 .button-send{
@@ -182,7 +186,7 @@ nav ul{
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 45%;
+  height: 150px;
   margin: 0px;
 }
 #fundoImg2{
@@ -192,7 +196,7 @@ nav ul{
    background-repeat: no-repeat;
    background-position: left;
    width: 100%;
-   height: 50%;
+   height: 150px;
    margin: 0px;
 }
 #fundoImg3{
@@ -202,7 +206,7 @@ nav ul{
    background-repeat: no-repeat;
    background-position: left;
    width: 100%;
-   height: 50%;
+   height: 150px;
    margin: 0px;
 }
 #fundoImg4{
@@ -212,23 +216,24 @@ nav ul{
    background-repeat: no-repeat;
    background-position: left;
    width: 100%;
-   height: 50%;
+   height: 150px;
    margin: 0px;
 }
+
 .conteudo-2{
    font-size: 15px;
    font-family: DidaticGothic;
    width: 100%;
    text-align: center;
    background: #F9F9F9;
-   padding-top: 25px;
+   padding-top: 40px;
    padding-bottom: 25px;
 }
 .conteudo-3{
    font-size: 15px;
    font-family: DidaticGothic;
    width: 100%;
-   height: 450px;
+   height: 585px;
    text-align: center;
    background: #F9F9F9;
    padding-top: 25px;
@@ -247,6 +252,11 @@ nav ul{
    padding-bottom: 25px;
    font-size: 25px;
    font-weight: normal;
+}
+.conteudo-3 > p{
+   width: 60%;
+   text-align: center;
+   margin: auto;
 }
 .conteudo-4{
    font-size: 15px;
@@ -332,6 +342,7 @@ nav ul{
  }
  .icone p{
    width: 240px;
+   text-align: justify;
  }
 .row{
    width: 100%;
@@ -453,7 +464,7 @@ nav ul{
   display: flex;
 }
 #timeline{
-  margin-top: 50px;
+  margin-top: 85px;
   padding: 0;
   border-top: 2px solid #a7afa7;
   list-style: none;
@@ -570,6 +581,11 @@ nav ul{
 .owl-carousel .owl-animated-in {z-index: 0;}
 .owl-carousel .owl-animated-out { z-index: 1;}
 .owl-carousel .fadeOut {-webkit-animation-name: fadeOut; animation-name: fadeOut;}
+
+#carousel1 img{
+  background-size: cover;
+  background-position: center;
+}
 
 @-webkit-keyframes fadeOut {
   0% {
@@ -702,6 +718,9 @@ nav ul{
 }
 
 textarea{
+  overflow-x: hidden;
+  overflow-y: auto;
+  resize: none;
   width: 95%;
   height: 105px;
 }
@@ -783,7 +802,8 @@ textarea{
 }
 
 /*REPONSIVIDADE DESSA BAGAÇA :3 */;
-@media only screen and (min-width: 1200px){
+@media only screen and (max-width: 480px){
+  
 }
 @media only screen and (max-width: 640px){
   #carousel2 .owl-item img{
@@ -880,12 +900,17 @@ textarea{
     width: 680px;
   }
 }
+@media only screen and (max-width: 325px) {
+  .conteudo-3{
+    height: 1300px;
+  }
+}
 @media only screen and (max-width: 780px){
   .conteudo-3{
    font-size: 13.5px;
    font-family: DidaticGothic;
    width: 100%;
-   height: 950px;
+   height: 1150px;
    text-align: center;
    background: #F9F9F9;
    padding-top: 25px;
@@ -1018,7 +1043,8 @@ textarea{
     padding-top: 7px;
     padding-bottom: 7px;
   }
-
+  .contato-form{
+  }
   .linha-footer{
     width: 100%;
     display: inline-flex;
@@ -1251,6 +1277,9 @@ textarea{
     width: 250px;
     height: 230px;
   }
+  .conteudo-3{
+    height: 1250px;
+  }
 }
 @media only screen and (max-width: 455px) {
   #timeline{
@@ -1379,13 +1408,37 @@ textarea{
 }
 
 .navbar a:hover{
-   color: #393434;
+   color: green;
 }
 
 .navbar a:active{
    text-decoration: none;
    color: #393434;
 }
+
+.menu ul a{
+   text-decoration: none;
+   color: #393434;
+}
+
+.menu ul a:link{
+   text-decoration: none;
+   color: #393434;
+}
+
+.menu ul a:visited{
+   color: #393434;
+}
+
+.menu ul a:hover{
+   color: green;
+}
+
+.menu ul a:active{
+   text-decoration: none;
+   color: #393434;
+}
+
 
 .button a{
    text-decoration: none;
