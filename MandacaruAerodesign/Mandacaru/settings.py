@@ -123,3 +123,15 @@ STATIC_URL = '/static/'
 STATIC_ROOT = ''
 
 STATICFILES_DIRS = ( os.path.join('static'),)
+
+TEMPLATED_EMAIL_BACKEND = 'templated_email.backends.vanilla_django.TemplateBackend'
+
+EMAIL_USE_TLS = True
+
+EMAIL_HOST = 'smtp.gmail.com'
+
+EMAIL_PORT = 587
+
+EMAIL_HOST_USER = '' #email do cliente
+
+EMAIL_HOST_PASSWORD = '' #senha do cliente

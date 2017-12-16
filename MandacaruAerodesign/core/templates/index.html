@@ -514,15 +514,16 @@
 	<!-- CONTATO E MAPA-->
 	<div class="contato-mapa">
 		<div class="contato-form">
-			<h3>ENTRE EM CONTATO</h3>
-			<form>
+			<h3>ENTRE EM CONTATO</h3>	
+			<form method = "POST">
+				{% csrf_token %}
 				<input class="adjust" type="text" name="nome" placeholder="Nome e sobrenome *"><br>
 				<input class="adjust" type="email" name="email" placeholder="Email *"><br>
 				<input class="adjust" type="text" name="telefone" placeholder="Telefone *"><br>
 				<!-- <input id="mensagem-input" type="textarea" name="mensagem" placeholder="Digite sua mensagem *"><br> -->
 				<textarea name="mensagem" placeholder="Digite sua mensagem *"></textarea>
+				<button class="button-send" type="submit">Enviar</button>
 			</form>
-			<button class="button-send" type="submit">Enviar</button>
 		</div>
 
 		<div class="mapa">

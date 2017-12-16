@@ -1,0 +1,7 @@
+{% block subject %}Email de contato (site){% endblock %}
+{% block plain %}
+E-mail foi enviado por: {{ nome }}
+E-mail do contato: {{email}}
+O telefone de {{nome}} é: {{telefone}}
+Mensagem: {{ mensagem }}
+{% endblock %}
