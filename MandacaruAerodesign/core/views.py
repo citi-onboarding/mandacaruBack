@@ -22,10 +22,7 @@ def index(request):
             'telefone': telefone,
             'mensagem': mensagem
         },
-        )
-        print(foi)
-        print("cheguei aqui bibi otaria")
-    
+        )   
     infos = infoPS.objects.first()
 
     contexto = { 'infos_ativo': infos.ativo }
