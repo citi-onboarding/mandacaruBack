@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="{% static "css/estilo.css" %}" /> <!--CSS PRINCIPAL-->
+	<link rel="stylesheet" type="text/css" href="{% static "css/estilo.css" %}" > <!--CSS PRINCIPAL-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="{% static "css/animate.css" %}"> <!--CSS AUXILIAR DO CARROSSEL-->
 	<title>Mandacaru Aerodesign</title>
@@ -14,9 +14,9 @@
 
 <body>
 
-
+	<div id="target-0"></div>
 	<!--BARRA DE NAVEGAÇÃO-->
-	<div class="navbar">
+	<div class="navbar" >
 		<div id="black-overlay"></div>
 
 		<div class="logoImg">
@@ -25,7 +25,7 @@
 
 		<nav>
 			<ul>
-				<li class="notshowonmobile"><a href="index.html" style="margin-right: 50px">INÍCIO</a></li>
+				<li class="notshowonmobile"><a class="scroll" href="#target-0" style="margin-right: 50px">INÍCIO</a></li>
 
 				<li class="notshowonmobile"><a class="scroll" href="#target-1" style="margin-right: 50px">SOBRE</a></li>
 				
@@ -381,31 +381,31 @@
 				<img src="{% static "css/img/galeria/05.JPG" %}" alt="">
 			</div>
 			<div class="mosaicflow__item">
-				<img src="{% static "css/img/galeria/06.JPG" %}" alt="">
+				<img src="{% static "css/img/galeria/06.jpg" %}" alt="">
 			</div>
 			<div class="mosaicflow__item">
-				<img src="{% static "css/img/galeria/07.JPG" %}" alt="">
+				<img src="{% static "css/img/galeria/07.jpg" %}" alt="">
 			</div>
 			<div class="mosaicflow__item">
-				<img src="{% static "css/img/galeria/08.JPG" %}" alt="">
+				<img src="{% static "css/img/galeria/08.jpg" %}" alt="">
 			</div>
 			<div class="mosaicflow__item">
-				<img src="{% static "css/img/galeria/11.JPG" %}" alt="">
+				<img src="{% static "css/img/galeria/11.jpg" %}" alt="">
 			</div>
 			<div class="mosaicflow__item">
-				<img src="{% static "css/img/galeria/12.JPG" %}" alt="">
+				<img src="{% static "css/img/galeria/12.jpg" %}" alt="">
 			</div>
 			<div class="mosaicflow__item">
-				<img src="{% static "css/img/galeria/13.JPG" %}" alt="">
+				<img src="{% static "css/img/galeria/13.jpg" %}" alt="">
 			</div>
 			<div class="mosaicflow__item">
-				<img src="{% static "css/img/galeria/01.JPG" %}" alt="">
+				<img src="{% static "css/img/galeria/01.jpg" %}" alt="">
 			</div>
 			<div class="mosaicflow__item">
-				<img src="{% static "css/img/galeria/14.JPG" %}" alt="">
+				<img src="{% static "css/img/galeria/14.jpg" %}" alt="">
 			</div>
 			<div class="mosaicflow__item">
-				<img src="{% static "css/img/galeria/10.JPG" %}" alt="">
+				<img src="{% static "css/img/galeria/10.jpg" %}" alt="">
 			</div>
 
 		</div>
@@ -582,15 +582,15 @@
 		<div class="closemenu"><a href="javascript:void(0);" id="closemenubtn"><i class="material-icons">close</i></a></div>
 		<div>
 		<ul>
-			<li class="" style="padding-bottom: 6px;"><a href="index.html" style="margin-right: 50px">INÍCIO</a></li>
+			<li style="padding-bottom: 6px;"><a class="scroll" href="#target-0" style="margin-right: 50px">INÍCIO</a></li>
 
-			<li class="" style="padding-bottom: 6px;"><a href="index.html" style="margin-right: 50px">SOBRE</a></li>
+			<li style="padding-bottom: 6px;"><a class="scroll" href="#target-1" style="margin-right: 50px">SOBRE</a></li>
 				
-			<li class="" style="padding-bottom: 6px;"><a href="index.html" style="margin-right: 50px">EQUIPE</a></li>
+			<li style="padding-bottom: 6px;"><a class="scroll" href="#target-2" style="margin-right: 50px">EQUIPE</a></li>
 				
-			<li class="" style="padding-bottom: 6px;"><a href="index.html" style="margin-right: 50px">GALERIA</a></li>
+			<li style="padding-bottom: 6px;"><a class="scroll" href="#target-3" style="margin-right: 50px">GALERIA</a></li>
 				
-			<li class="" style="margin-right: 20px;"><a href="index.html">PATROCINADORES</a></li>
+			<li style="margin-right: 20px;"><a class="scroll" href="#target-4">PATROCINADORES</a></li>
 			</ul>
 		</div>
 	</div>
