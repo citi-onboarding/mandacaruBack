@@ -122,6 +122,8 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = ''
 
+MEDIA_URL = '/media/'
+
 STATICFILES_DIRS = ( os.path.join('static'),)
 
 TEMPLATED_EMAIL_BACKEND = 'templated_email.backends.vanilla_django.TemplateBackend'

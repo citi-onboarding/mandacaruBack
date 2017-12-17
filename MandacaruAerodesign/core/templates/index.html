@@ -242,118 +242,15 @@
 		<!--O script cria uma classe chamada owl-iten pra cada div dentro da div principal-->
 		<!--Você pode configurar essa classe também no estilo.css-->
 		<div id = "carousel1" class="owl-theme owl-carousel">
+            {% for membro in membros %}
             <div>
-            	<img style="background-image: url('{% static "css/img/membros/BrendaConrado.jpg" %}')">
+            	<img class="fotoequipe" style="background-image: url({{membro.foto.url}})">
             	<div class=legendaequipe>
-            		<span>Brenda Conrado<br></span>
-            		<span class="função">Chefe de Estruturas</span>
+            		<span>{{membro.nome}}<br></span>
+            		<span class="função">{{ membro.cargo }}</span>
             	</div>
             </div>
-            <div>
-            	<img style="background-image: url('{% static "css/img/membros/BrenoSouza.jpg" %}')">
-            	<div class=legendaequipe>
-            		<span>Breno Souza<br></span>
-            		<span class="função">Capitão</span>
-            	</div>
-            </div>
-            <div>
-            	<img style="background-image: url('{% static "css/img/membros/DanielAlencar.jpg" %}')">
-            	<div class=legendaequipe>
-            		<span>Daniel Alencar<br></span>
-            		<span class="função">Asp. de Finanças</span>
-            	</div>
-            </div>
-            <div>
-            	<img style="background-image: url('{% static "css/img/membros/EmmanuelEsperança.jpg" %}')">
-            	<div class=legendaequipe>
-            		<span>Emmanuel Esperança<br></span>
-            		<span class="função">Asp. de Proj. Mecânico</span>
-            	</div>
-            </div>
-            <div>
-            	<img style="background-image: url('{% static "css/img/membros/EnosHenrique.jpeg" %}')">
-            	<div class=legendaequipe>
-            		<span>Enos Henrique<br></span>
-            		<span class="função">Piloto</span>
-            	</div>
-            </div>
-            <div>
-            	<img style="background-image: url('{% static "css/img/membros/FelipeLins.jpg" %}')">
-            	<div class=legendaequipe>
-            		<span>Felipe Lins<br></span>
-            		<span class="função">Vice-Capitão</span>
-            	</div>
-            </div>
-            <div>
-            	<img style="background-image: url('{% static "css/img/membros/GabrielJesus.jpg" %}')">
-            	<div class=legendaequipe>
-            		<span>Gabriel Jesus<br></span>
-            		<span class="função">Asp. de Aerodinânica</span>
-            	</div>
-            </div>
-            <div>
-            	<img style="background-image: url('{% static "css/img/membros/LeonardoFerreira.jpg" %}')">
-            	<div class=legendaequipe>
-            		<span>Leonardo Ferreira<br></span>
-            		<span class="função">Chefe de Desempenho</span>
-            	</div>
-            </div>
-            <div>
-            	<img style="background-image: url('{% static "css/img/membros/MariaEduarda.jpg" %}')">
-            	<div class=legendaequipe>
-            		<span>Maria Eduarda<br></span>
-            		<span class="função">Asp. de Aerodinâmica</span>
-            	</div>
-            </div>
-            <div>
-            	<img style="background-image: url('{% static "css/img/membros/MarynaDiógenes.jpg" %}')">
-            	<div class=legendaequipe>
-            		<span>Maryna Diógenes<br></span>
-            		<span class="função">Chefe de Construção</span>
-            	</div>
-            </div>
-            <div>
-            	<img style="background-image: url('{% static "css/img/membros/MickelineAlves.jpg" %}')">
-            	<div class=legendaequipe>
-            		<span>Mickeline Alves<br></span>
-            		<span class="função">Asp. de Cargas<span>
-            	</div>
-            </div>
-            <div>
-            	<img style="background-image: url('{% static "css/img/membros/PedroHenrique.jpg" %}')">
-            	<div class=legendaequipe>
-            		<span>Pedro Henrique<br></span>
-            		<span class="função">Chefe de Eletrônica</span>
-            	</div>
-            </div>
-            <div>
-            	<img style="background-image: url('{% static "css/img/membros/RenataTavares.jpg" %}')">
-            	<div class=legendaequipe>
-            		<span>Renata Tavares<br></span>
-            		<span class="função">Chefe de Aerodinâmica</span>
-            	</div>
-            </div>
-            <div>
-            	<img style="background-image: url('{% static "css/img/membros/VictorOliveira.jpg" %}')">
-            	<div class=legendaequipe>
-            		<span>Victor Oliveira<br></span>
-            		<span class="função">Asp. de Estab. e Controle</span>
-            	</div>
-            </div>
-            <div>
-            	<img style="background-image: url('{% static "css/img/membros/VitorMourato.jpg" %}')">
-            	<div class=legendaequipe>
-            		<span>Vitor Mourato<br></span>
-            		<span class="função">Asp. de Eletrônica</span>
-            	</div>
-            </div>
-            <div>
-            	<img style="background-image: url('{% static "css/img/membros/WandersonBezerra.jpg" %}')">
-            	<div class=legendaequipe>
-            		<span>Wanderson Bezerra<br></span>
-            		<span class="função">Chefe de Proj. Mecânico</span>
-            	</div>
-            </div>
+            {% endfor %}
 		</div>
 	</div>
 
@@ -420,93 +317,11 @@
 	<div class=conteudo-6 id="target-4">
 		<h3>PATROCINADORES</h3>
 		<div id = "carousel2" class="owl-theme owl-carousel">
+            {% for patroc in patrocinadores %}
             <div class="patr">
-            	<img src="{% static "css/img/logos/Alltec.png" %}">
+            	<img src="{{ patroc.foto.url }}" alt="{{patroc.descricao}}">
             </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/Altair.png" %}">
-         	</div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/ANSYS.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/APC.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/Atelier.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/Barracuda.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/CIn.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/CITi.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/ColegiodeSaude.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/Concrebuco.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/CreaJr.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/CTG.jpg" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/DAMecanica.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/Edescartaveis.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/ESSS.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/HxH.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/Louco.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/MangueBaja.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/MKFuel.jpg" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/ModFrontier.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/Next.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/PortoDigital.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/SAE.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/Solidworks.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/Starret.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/TAMBORIL.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/TKB.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/UFPE.png" %}">
-            </div>
-            <div class="patr">
-            	<img src="{% static "css/img/logos/Voxar.png" %}">
-            </div>
+            {% endfor %}
 		</div>
 		<button class="button"><a href="#" target="_blank">TORNE-SE UM PATROCINADOR!</a></button>
 	</div>

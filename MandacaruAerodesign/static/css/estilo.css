@@ -605,6 +605,7 @@ nav ul{
 #carousel1 img{
   background-size: cover;
   background-position: center;
+  display: block;
 }
 
 @-webkit-keyframes fadeOut {
@@ -652,6 +653,7 @@ nav ul{
 #carousel2 .owl-item div img{
   position: relative;
   height: auto;
+  display: block;
 }
 /*  AUTO HEIGHT DO PLUGUIN */
 

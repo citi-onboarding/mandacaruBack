@@ -26,6 +26,8 @@ def index(request):
     infos = infoPS.objects.first()
 
     contexto = { 'infos_ativo': infos.ativo }
+    contexto["membros"] = member.objects.all().order_by('nome')
+    contexto["patrocinadores"] = patroc.objects.all()
 
     return render(
         request, 'index.html', contexto
