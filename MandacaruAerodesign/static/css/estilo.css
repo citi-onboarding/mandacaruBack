@@ -365,7 +365,7 @@ nav ul{
  }
  .icone p{
    width: 240px;
-   text-align: justify;
+   text-align: center;
  }
 .row{
    width: 100%;
@@ -932,6 +932,11 @@ textarea{
     height: 1200px;
   }
 }
+@media only screen and (max-width: 500px){
+.marco > img{
+     left: 6px;
+  }
+}
 @media only screen and (max-width: 780px){
   .conteudo-3{
    font-size: 13.5px;
@@ -993,7 +998,7 @@ textarea{
      display: block;
      position: absolute;
      top: 10px;
-     left: 10px;
+     left: 8px;
   }
   .date{
     width: 100%;
@@ -1392,6 +1397,7 @@ textarea{
      text-align: center;
      display: inline-block;
      font-size: 10px;
+     left:10px;
   }
   #videopromocional{
     height: 180px;
