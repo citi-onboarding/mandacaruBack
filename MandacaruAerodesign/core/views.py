@@ -15,7 +15,7 @@ def index(request):
         foi = send_templated_mail(
         template_name='email', 
         from_email=email,
-        recipient_list=[''], #email do cliente/de quem enviar o email
+        recipient_list=['mandacaruaerodesign@gmail.com'], #email do cliente/de quem enviar o email
         context={
             'nome': nome,
             'email': email,

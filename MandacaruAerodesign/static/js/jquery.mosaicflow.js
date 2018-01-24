@@ -44,9 +44,10 @@
 	$.fn.mosaicflow.defaults = {
 		itemSelector: '> *', //NUSEI
 		columnClass: 'mosaicflow__column', //Classe principal das colunas da galeria (algo interno do script)
-		minItemWidth: 320, //Largura mínima das fotos da galeria
-		minColumns: 2, //Quantidade de colunas mínima 
-		itemHeightCalculation: 'auto', //Altura automatica, para não ser mudar para 'attribute'
+		minItemWidth: 280, //Largura mínima das fotos da galeria
+		minColumns: 4, //Quantidade de colunas mínima 
+		itemHeightCalculation: 'auto',
+		itemWidthCalculation: 'auto', //Altura automatica, para não ser mudar para 'attribute'
 		threshold: 14 //NUSEI
 	};
 	//__________________________________________//

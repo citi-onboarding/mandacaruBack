@@ -373,48 +373,6 @@ nav ul{
    display: inline-flex;
    justify-content: center;
 }
-#icone1{
-  position: relative;
-  bottom: 53px;
-}
-/*#icone2{
-}*/
-#icone3{
-  position: relative;
-  bottom: 72px;
-}
-#icone4{
-  position: relative;
-  bottom: 54px;
-}
-#icone5{
-  position: relative;
-  bottom: 53px;
-}
-#icone6{
-  position: relative;
-  bottom: 35px;
-}
-#icone7{
-  position: relative;
-  bottom: 71px;
-}
-#icone8{
-  position: relative;
-  bottom: 17px;
-}
-#icone9{
-  position: relative;
-  bottom: 65px;
-}
-#icone10{
-  position: relative;
-  bottom: 45px;
-}
-#icone11{
-  position: relative;
-  bottom: 83px;
-}
 .column-23{
    width: 95%;
    justify-content: flex-start;
@@ -853,38 +811,11 @@ textarea{
   }
 }
 @media only screen and (max-width: 1100px){
-  #icone4{
-    top: 0px;
-  }
-  #linha2{
-    padding-top: 30px;
-  }
-  #linha3{
-    padding-top: 30px;
-  }
+
 }
 @media only screen and (max-width: 820px){
   .conteudo-4{
     max-height: 1800px;
-  }
-  #icone5{
-    top: -130px;
-  }
-  #icone7{
-    top: -180px;
-  }
-  #icone9{
-    top: -240px;
-  }
-  #icone11{
-    left: -140px;
-    top: -240px;
-  }
-  #linha2{
-    padding-top: 30px;
-  }
-  #linha3{
-    padding-top: 30px;
   }
 }
 @media only screen and (max-width: 550px){
@@ -893,33 +824,6 @@ textarea{
   }
   .conteudo-4{
     max-height: 3250px;
-  }
-  #icone2{
-    position: relative;
-    top:-60px;
-  }
-  #icone4{
-    position: relative;
-    top: -85px;
-  }
-  #icone6{
-    top: -140px;
-  }
-  #icone7{
-    top: -150px;
-  }
-  #icone8{
-    top: -165px;
-  }
-  #icone9{
-    top: -205px;
-  }
-  #icone10{
-    top: -215px;
-  }
-  #icone11{
-    left:0px;
-    top: -225px;
   }
 }
 @media only screen and (max-width: 930px){
@@ -1128,7 +1032,7 @@ textarea{
 
   }
 
-  #linkedin{
+  #youtube{
     padding-left: 10px;
   }
 }

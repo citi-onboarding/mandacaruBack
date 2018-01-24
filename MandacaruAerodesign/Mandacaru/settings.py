@@ -134,6 +134,6 @@ EMAIL_HOST = 'smtp.gmail.com'
 
 EMAIL_PORT = 587
 
-EMAIL_HOST_USER = '' #email do cliente
+EMAIL_HOST_USER = 'formulario.mandacaru@gmail.com' #email do cliente
 
-EMAIL_HOST_PASSWORD = '' #senha do cliente
+EMAIL_HOST_PASSWORD = 'MandacaruAero@789' #senha do cliente
