@@ -9,6 +9,12 @@ class member(models.Model):
     cargo = models.CharField(max_length=30)
     foto = models.FileField()
 
+    def __str__(self):
+        return self.nome
+
 class patroc(models.Model):
     foto = models.FileField()
     descricao = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.descricao
