@@ -194,6 +194,7 @@ nav ul{
 }
 
 .button-send{
+  margin-top: 3px;
   width: 75px;
   top:5px;
   height: 37.5px;
