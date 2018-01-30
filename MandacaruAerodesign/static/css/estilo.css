@@ -91,6 +91,10 @@ nav ul{
   padding: 7px;
 }
 
+#closebtn{
+  color: #232222;
+}
+
 .parallax{/*imagem fixa*/
    background-attachment: fixed;
    background-position: center;
