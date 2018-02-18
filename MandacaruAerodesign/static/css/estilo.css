@@ -934,6 +934,10 @@ textarea{
     width: 0px;
     flex-direction: column;
   }
+  #videoyoutube{
+    height: 200px;
+    width: 250px;
+  }
   #timeline li {
     display: flex;
     position: relative;
@@ -1218,6 +1222,10 @@ textarea{
      position: absolute;
      top:-100px;
   }
+  #videoyoutube{
+    height: 210px;
+    width: 220px;
+  }
 }
 @media only screen and (max-width: 680px) {
   .marco {
@@ -1240,6 +1248,9 @@ textarea{
   #videopromocional{
     width: 250px;
     height: 230px;
+  }
+  #videoyoutube{
+    height: 190px;
   }
   .conteudo-3{
     height: 1160px;
@@ -1329,6 +1340,10 @@ textarea{
   #videopromocional{
     height: 180px;
     width: 180px;
+  }
+  #videoyoutube{
+    height: 135px;
+    width: 160px;
   }
 }
 @media only screen and (max-width: 768px) {
